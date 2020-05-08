@@ -1,16 +1,35 @@
 
 
 
-
-.menu{
+/* NAVIGATION STYLE */
+nav{
 
 }
 
+/* GLOBE STYLE */
 .globe {
 
 
 }
 
+.regionglobe{
+
+
+}
+
+/* ORB STYLE */
+.communityorb{
+    
+}
+
+
+
+.workorb{
+
+}
+
+
+/* MESSAGING STYLE */
 .chat{
 
 
@@ -22,12 +41,4 @@
 
 }
 
-.communityorb{
-    
-}
 
-
-
-.workorb{
-
-}
