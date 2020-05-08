@@ -7,8 +7,10 @@ def index (request):
     
     #communities=Community.objects
     #
-    
-    return render(request, 'index.html', {})
+
+    post = "hello world"
+
+    return render(request, 'hojasroot/index.html', {"post":post})
 
 
 
