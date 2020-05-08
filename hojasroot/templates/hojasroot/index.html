@@ -1,1 +1,22 @@
+{% extends 'hojasroot/base.html' %}
+
+
+
+{% block content %}
+
+    <div class='regionglobe'>
+    {% for community in communities %}
+    
+        <div class='communityorb'>
+            {{ community }}
+        </div>
+    
+    {% endfor %}
+
+    </div>
+
+
+
+
+{% endblock %}
 

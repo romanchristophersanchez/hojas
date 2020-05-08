@@ -1,0 +1,20 @@
+{% extends 'hojasroot/base.html' %}
+
+
+
+{% block content %}
+
+    <div class='communityglobe'>
+    {% for workplace in workplaces %}
+    
+        <div class='workorb'>
+            {{ workplace }}
+        </div>
+    
+    {% endfor %}
+
+    </div>
+
+
+
+{% endblock %}
