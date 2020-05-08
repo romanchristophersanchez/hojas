@@ -10,7 +10,7 @@ def index (request):
     #communities=Community.objects
     #
     
-    return render(request, 'index.html')
+    return render(request, 'hojasroot/index.html', {})
 
 
 
