@@ -7,10 +7,10 @@ def index (request):
     
     
     
-   # communities=Community.objects
-    #{'communities':communities}
+    #communities=Community.objects
+    #
     
-    return render(request, 'index.html', {})
+    return render(request, 'index.html')
 
 
 
