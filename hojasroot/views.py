@@ -20,9 +20,10 @@ def index (request):
 
 def community (request):
 
-    workplaces=Workplace.objects
+   # workplaces=Workplace.objects
+   #{'workplaces':workplaces}
 
-    return render(request, 'communityfeed.html', {'workplaces':workplaces})
+    return render(request, 'communityfeed.html', {})
 
 
 # Community Detail
