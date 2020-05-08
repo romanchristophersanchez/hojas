@@ -5,12 +5,10 @@ from .models import User, Community, Workplace
 # goal: display all communities near you. but part of a scalable map of all communities
 def index (request):
     
-    
-    
     #communities=Community.objects
     #
     
-    return render(request, 'hojasroot/index.html', {})
+    return render(request, 'index.html', {})
 
 
 
