@@ -1,0 +1,141 @@
+/* BODY */
+
+body {
+  background-color: green;
+  cursor: pointer;
+  width: 100%;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.spacer{
+  height: 40px;
+}
+
+/* NAVIGATION STYLE */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 10%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  
+  margin: 0 auto;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 18px;
+  text-align: center;
+  display: none;
+  overflow: hidden;
+  background-color: green;
+  margin-bottom: 10px;
+}
+
+
+
+
+li{
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+
+
+
+
+/* ORB STYLE */
+.canvcontainer{
+  width: 700px;
+  height: 300px;
+  border-radius: 600px / 300px;
+  margin: 0 auto;
+}
+canvas {
+  border: 1px soild black;
+  overflow:hidden;
+  width:80%;
+  height:80%;
+  border-radius: 400px / 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+
+/* MESSAGING STYLE */
+.expandSearch{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.expandSearch i{
+  display: block;
+  margin-top:40px;
+  margin-bottom: 15px;
+  margin-right: 12px;
+  float:right;
+  bottom: 25px;
+  right: 56px;
+  padding: 8px 4px 8px 8px ;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.24s;
+  font: 24px/1.4 sans-serif;
+  color: black;
+}
+.expandSearch i:hover{
+  color: #0bf;
+}
+.expandSearch input{
+  border:none;
+  background: transparent;
+  font: 14px/1.4 sans-serif;
+  padding-left: 26px;
+  background:#fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: 0.24s;
+  width: 0px;
+  padding: 8px 0px 8px 34px;
+  display: block;
+  margin-top:40px;
+  margin-bottom: 15px;
+  margin-right:10px;
+  float:right;
+  bottom: 25px;
+  right: 56px;
+}
+.expandSearch input:focus{
+  border-color: #aaa;
+  outline: none;
+  width:600px;
+  height: 200px;
+  padding: 8px 12px 8px 34px;
+  border-color: #0bf;
+}
+.expandSearch input:focus + i{
+  /*padding: 8px 4px 8px 8px ;*/
+  color: #ddd;
+  pointer-events: none;
+}

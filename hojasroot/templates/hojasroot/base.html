@@ -5,56 +5,51 @@
 
 <head>
         <title>Hojas</title>
-         <link rel="stylesheet" href="{% static 'css/hojasroot.css' %}">
+         <link rel="stylesheet" type='text/css' href="{% static 'css/hojasroot.css' %}">
+         <script src="{% static 'js/hojasroot.js' %}"></script>
 </head>
 
 <body>
 
+    <div class="parent">
 
-    
-        <div class='siteTitle'>
-            <h1>Hojas</h1>
+        <button type="button" class='collapsible'>Hojas</h1></button>
+
+        <div class="content">
+            <nav>
+                </p>
+                <ul>
+                    <li <a href=' '></li>Home</li>
+                    <li <a href=' '></li>Community</li>
+                    <li <a href=' '></li>About</li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-           </p>
-            <ul>
-                <li <a href=' '></li>>Home</li>
-                <li <a href=' '></li>>Community</li>
-                <li <a href=' '></li>>About</li>
-            </ul>
-        </nav>
-    
-    
 
-
-
-
-
+    </div>
 
     <div class="content container">
-        <div class="globe">
-
-            {% block content %}
 
 
+        {% block content %}
 
 
-            {% endblock %}
-
-        </div>
-    </div>
 
 
-    <div class='chat'>
-
-
+        {% endblock %}
 
     </div>
 
-    <div class='inbox'>
-    
-    
-    
+    <div class='spacer'></div>
+
+    <canvas id="canvas"></canvas>
+
+
+    <div class="parent">
+        <label class="expandSearch">
+            <input type="text" name="search">
+            <i>Chat</i>
+        </label>
     </div>
 
 </body>
