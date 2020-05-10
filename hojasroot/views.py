@@ -16,10 +16,10 @@ def index (request):
   #  mo.save()
 
 
- #   users = User.objects
-  #  context = {'users':users}
+    users = User
+    context = {'users':users}
     
-    return render(request, 'index.html', )
+    return render(request, 'index.html', context)
     
 
 
