@@ -1,16 +1,26 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import User, Community, Workplace
 
 # Index - Autonomous Region Feed
 # goal: display all communities near you. but part of a scalable map of all communities
 def index (request):
+ #   so = Community(communityID='4253', city="Southbury", state='Connecticut')
+  #  so.save()
+
+   # co=User(name='Roman',email='stwrs59@gmail.com', communityID=so)
+    #co.save()
+
+ #   mo = User(name='Teresa', email='teresa@gmail.com', communityID=so)
     
-    #communities=Community.objects
-    #
+  #  mo.save()
 
-    post = "hello world"
 
-    return render(request, 'hojasroot/index.html', {"post":post})
+ #   users = User.objects
+  #  context = {'users':users}
+    
+    return render(request, 'index.html', )
+    
 
 
 

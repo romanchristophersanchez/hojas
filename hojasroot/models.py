@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class User(models.Model):
-    community = models.ForeignKey('Community', on_delete=models.CASCADE)
+    communityID = models.ForeignKey('Community', on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=200)
 
@@ -13,7 +13,7 @@ class User(models.Model):
 
 
 class Community(models.Model):
-    name = models.CharField(max_length=200)
+    communityID = models.CharField(max_length=200)
     city = models.CharField(max_length=200)
     state = models.CharField(max_length=200)
     
